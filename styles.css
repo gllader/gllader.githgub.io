@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
 
 :root {
   --option-height: 80px;
@@ -23,8 +23,13 @@ body {
 }
 
 .shadow {
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(163, 163, 163, 0.7));
-  filter: drop-shadow(0px 10px 5px rgba(163, 163, 163, 0.7));
+  -webkit-filter: drop-shadow(5px 5px 2px #ffffff);
+  filter: drop-shadow(5px 5px 2px #ffffff);
+}
+
+.fill-branco {
+  filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(353deg) brightness(110%) contrast(100%);
+  -webkit-filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(353deg) brightness(110%) contrast(100%);
 }
 
 .navBarWrapper {
@@ -38,7 +43,7 @@ body {
   justify-content: space-between;
   padding: 0 2%;
   align-items: center;
-  z-index: 99;
+  z-index: 999;
 }
 
 .sticky {
@@ -76,7 +81,7 @@ body {
   text-transform: uppercase;
   align-items: center;
   text-align: center;
- 
+
   font-size: 0.95em;
   color: #000;
 }
@@ -197,27 +202,17 @@ body {
 }
 
 .section--yellow {
-  /* width: 100%;
-  background: url('./assets/background.svg') no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 999; */
-
-  background: #edce8c;
-  -webkit-transform: skew(0deg, -170deg);
-  transform: skew(0deg, -170deg);
+  background: black;
+  -webkit-transform: skew(0deg, -200deg);
+  transform: skew(0deg, -200deg);
   padding: 200px 0;
-  margin-top: 20px;
+  margin-top: -310px;
+  z-index: -1;
 }
 
 .section--yellow .div-section-yellow {
-  -webkit-transform: skew(0deg, -190deg);
-  transform: skew(0deg, -190deg);
+  -webkit-transform: skew(0deg, -160deg);
+  transform: skew(0deg, -160deg);
   text-align: left;
   margin-left: 20px;
   color: #fff;
@@ -230,29 +225,92 @@ body {
   text-shadow: 0px 0px 5px rgb(167, 167, 167);
 }
 
+.typewriter h1 {
+  font-size: 50px;
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  text-align: center;
+  z-index: 99;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+.text-chama {
+  font-size: 60px;
+  text-shadow: 0px 0px 5px rgb(167, 167, 167);
+}
+
 .section--black {
-  background: #000000;
-  -webkit-transform: skew(0deg, -200deg);
-  transform: skew(0deg, -200deg);
+  background: #ff7a00;
+  -webkit-transform: skew(0deg, -160deg);
+  transform: skew(0deg, -160deg);
   padding: 200px 0;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
 .section--black .div-section-black {
-  -webkit-transform: skew(0deg, -160deg);
-  transform: skew(0deg, -160deg);
+  -webkit-transform: skew(0deg, -200deg);
+  transform: skew(0deg, -200deg);
   text-align: center;
 }
 
 .services-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
+  gap: 25px;
+}
+
+.logo-social-media img{
+  height: 20px;
+  width: 20px;
 }
 
 .card {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: #fff;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+}
+
+.card p {
+  
+}
+
+.sale {
+  color: green;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+hr {
+  width: 60%;
+  margin: 20px auto;
+  background-color: #000;
+  border-radius: 50px;
+  height: 3px;
 }
 
 .at-about-fab {
@@ -333,18 +391,13 @@ body {
   text-decoration: none;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+footer {
   background-color: #f5f5f5;
 }
 .credits {
   text-align: center;
   color: rgb(141, 141, 141);
 }
-
 
 .link {
   color: black;
@@ -357,9 +410,227 @@ body {
 
 .div-section-1 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  color: black;
+  text-align: center;
 }
 .img-center {
-  width: 50%;
-  margin-top: 75px;
+  width: 75%;
+  margin-top: 175px;
+  z-index: 99;
+  position: relative;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+  color: #5a5a5a;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #474544;
+  max-width: 768px;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #474544;
+  font-size: 32px;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.email {
+  float: right;
+  width: 45%;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.message {
+  float: none;
+}
+
+.name {
+  float: left;
+  width: 45%;
+}
+
+select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: #474544;
+}
+
+:-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #f2f3eb;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .underline {
+    width: 68px;
+  }
+
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .underline {
+    width: 53px;
+  }
+
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
+    font-size: 0.875em;
+  }
 }

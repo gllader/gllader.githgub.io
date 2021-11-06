@@ -36,7 +36,7 @@
     <body>
         <nav class="navBarWrapper" id="navBarWrapper">
             <div class="logoWrapper">
-              <img src="./assets/logo.svg" class="logoIcon" alt="logo"/>
+                <img src="./assets/logo.svg" class="logoIcon" alt="logo"/>
             </div>
             <div class="menuIconWrapper" id="menuIconWrapper">
             </div>
@@ -48,11 +48,6 @@
                 </li>
                 <li class="linkSelect">
                     <a href="#section2" class="link">
-                        Quem somos
-                    </a>
-                </li>
-                <li class="linkSelect">
-                    <a href="#section3" class="link">
                         Produtos e Serviços
                     </a>
                 </li>
@@ -62,28 +57,31 @@
                     </a>
                 </li>
                 <li class="linkSelect">
-                    <a href="#section3" class="link">
+                    <a href="#" class="link">
                         <img src="./assets/facebook.png" class="logo-social-media" alt="logo"/>
                     </a>
                 </li>
                 <li class="linkSelect">
-                    <a href="#section3" class="link">
+                    <a href="#" class="link">
                         <img src="./assets/instagram.png" class="logo-social-media" alt="logo"/>
                     </a>
                 </li>
             </ul>
         </nav>
-          
         <section class="section" id="section1">
             <div class="div-section-1">
-                <img src="./assets/logo-escrita.svg" class="img-center shadow" alt="logo"/>
+                <div>
+                    <img src="./assets/logo-escrita.svg" class="img-center fill-branco" alt="logo"/>
+                </div>
             </div>
         </section>
 
-        <section class="section" id="section2">
+        <section class="section" id="section1">
             <div class="section section--yellow">
                 <div class="div-section-yellow">
-                    <p class="text-sobre">Nosso objetivo é muito claro: <br/>Criar laços de parceria duradouros com o <br/>intuito de melhorar a performance da sua empresa.</p>
+                    <div class="typewriter">
+                        <h1>NÃO SOMOS COMUNS.</h1>
+                      </div>
                 </div>
             </div>
         </section>
@@ -94,19 +92,106 @@
                     <div class="services-cards">
                         <div class="card card-bronze">
                             <h1>BRONZE</h1>
-                            <div class="social-media-icons"></div>
+                            <div class="logo-social-media">
+                                <i><img src="./assets/facebook.png" alt="facebook logo"></i>
+                                <i><img src="./assets/instagram.png" alt="instagram logo"></i>
+                            </div>
+                            <p>Gestão de redes sociais</p>
+                            <p>Gestão de tráfego pago</p>
+                            <p>Criação de artes</p>
+                            <p>Copywriting</p>
+                            <p>Relatórios</p>
+                            <p>Interação com público</p>
+                            <p>3 publicações semanais</p>
+                            <p>Stories ilimitados</p>
+                            <hr>
+                            <p><del>R$1350,00</del></p>
+                            <p class="sale">R$1150,00</p>
                         </div>
                         <div class="card card-silver">
                             <h1>PRATA</h1>
+                            <div class="logo-social-media">
+                                <i><img src="./assets/facebook.png" alt="facebook logo"></i>
+                                <i><img src="./assets/instagram.png" alt="instagram logo"></i>
+                                <i><img src="./assets/google.png" alt="google logo"></i>
+                            </div>
+                            <p>Gestão de redes sociais</p>
+                            <p>Gestão de tráfego pago</p>
+                            <p>Criação de artes</p>
+                            <p>Copywriting</p>
+                            <p>Relatórios</p>
+                            <p>Interação com público</p>
+                            <p>Google ADS</p>
+                            <p>4 publicações semanais</p>
+                            <p>Stories ilimitados</p>
+                            <hr>
+                            <p><del>R$1600,00</del></p>
+                            <p class="sale">R$1490,00</p>
                         </div>
                         <div class="card card-gold">
                             <h1>OURO</h1>
+                            <div class="logo-social-media">
+                                <i><img src="./assets/facebook.png" alt="facebook logo"></i>
+                                <i><img src="./assets/instagram.png" alt="instagram logo"></i>
+                                <i><img src="./assets/google.png" alt="google logo"></i>
+                                <i><img src="./assets/youtube.png" alt="youtube logo"></i>
+                            </div>
+                            <p>Gestão de redes sociais</p>
+                            <p>Gestão de tráfego pago</p>
+                            <p>Criação de artes</p>
+                            <p>Copywriting</p>
+                            <p>Relatórios</p>
+                            <p>Interação com público</p>
+                            <p>Google ADS</p>
+                            <p>Youtube ADS (rede display)</p>
+                            <p>5 publicações semanais</p>
+                            <p>Stories ilimitados</p>
+                            <hr>
+                            <p><del>R$2100,00</del></p>
+                            <p class="sale">R$1790,00</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+
+        <section class="section" id="section3">
+            <div id="container">
+                <h1>&bull; Fale conosco &bull;</h1>
+                <div class="underline">
+                </div>
+                <form action="#" method="post" id="contact_form">
+                  <div class="name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Meu nome é" name="name" id="name_input" required>
+                  </div>
+                  <div class="email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Meu e-mail é" name="email" id="email_input" required>
+                  </div>
+                  <div class="telephone">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Meu número é" name="telephone" id="telephone_input" required>
+                  </div>
+                  <div class="subject">
+                    <label for="subject"></label>
+                    <select placeholder="Tipo de assunto" name="subject" id="subject_input" required>
+                      <option disabled hidden selected>Subject line</option>
+                      <option>Gostaria de um orçamento</option>
+                      <option>Gostaria de tirar uma dúvida</option>
+                    </select>
+                  </div>
+                  <div class="message">
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="Eu gostaria de falar sobre" id="message_input" cols="30" rows="5" required></textarea>
+                  </div>
+                  <div class="submit">
+                    <input type="submit" value="Enviar mensagem" id="form_button" />
+                  </div>
+                </form>
+              </div>
+        </section>
         <!-- <section class="section" id="section3">
             <div class="services-cards">
                 <div class="card card-bronze">
@@ -135,10 +220,10 @@
               </div>
             </div>
         </a>
-        <!-- <footer class="footer">
+        <footer class="footer">
             <p class="credits">
                 Designed by GLL
             </p>
-        </footer> -->
+        </footer>
     </body>
 </html> 
