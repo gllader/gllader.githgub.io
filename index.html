@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+                let navbar = document.querySelector("#navBar");
+                let navBarWrapper = document.querySelector("#navBarWrapper");
+                const menuIconWrapper = document.querySelector("#menuIconWrapper");
+
+                let aux = 0;
+
+                document.onclick = (element) => {
+                if (
+                    element.target.id !== "menuIconWrapper" &&
+                    element.target.id !== "navBar"
+                ) {
+                    navbar.classList.remove("showMe");
+                    menuIconWrapper.classList.remove("active");
+                }
+                };
+
+                menuIconWrapper.onclick = () => toggleEfect();
+
+                document
+                .querySelectorAll(".linkSelect")
+                .forEach((el) => el.setAttribute("onclick", "toggleEfect()"));
+
+                function toggleEfect() {
+                    navbar.classList.toggle("showMe");
+                    menuIconWrapper.classList.toggle("active");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <nav class="navBarWrapper" id="navBarWrapper">
+            <div class="logoWrapper">
+              <img src="./assets/logo.svg" class="logoIcon" alt="logo"/>
+            </div>
+            <div class="menuIconWrapper" id="menuIconWrapper">
+            </div>
+            <ul class="navLink" id="navBar">
+                <li class="linkSelect">
+                    <a href="#section1" class="link">
+                        Home
+                    </a>
+                </li>
+                <li class="linkSelect">
+                    <a href="#section2" class="link">
+                        Quem somos
+                    </a>
+                </li>
+                <li class="linkSelect">
+                    <a href="#section3" class="link">
+                        Produtos e Serviços
+                    </a>
+                </li>
+                <li class="linkSelect">
+                    <a href="#section3" class="link">
+                        Contato
+                    </a>
+                </li>
+                <li class="linkSelect">
+                    <a href="#section3" class="link">
+                        <img src="./assets/facebook.png" class="logo-social-media" alt="logo"/>
+                    </a>
+                </li>
+                <li class="linkSelect">
+                    <a href="#section3" class="link">
+                        <img src="./assets/instagram.png" class="logo-social-media" alt="logo"/>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+          
+        <section class="section" id="section1">
+            <div>
+                <img src="./assets/logo-escrita.svg" class="img-center" alt="logo"/>
+            </div>
+        </section>
+
+        <section class="section section--yellow" id="section2">
+            <div>
+                ''
+            </div>
+        </section>
+
+        <section class="section " id="section3">
+            <div class="services-cards">
+                <div class="card card-bronze">
+                    <h1>BRONZE</h1>
+                    <div class="social-media-icons"></div>
+
+                </div>
+                <div class="card card-silver">
+                    <h1>PRATA</h1>
+                </div>
+                <div class="card card-gold">
+                    <h1>OURO</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--black" id="section3"></section>
+
+        <a href="">
+            <div class="at-about-fab">
+              <div class="at-about-fab__thumbnail">
+                <img alt="Contact Us on WhatsApp" src="./assets/whatsapp.png" />
+              </div>
+              <div class="at-about-fab__meta">
+                <h2>E&M Digital Group</h2>
+                <p>(41) 9999-9999</p>
+              </div>
+            </div>
+        </a>
+        <footer class="footer">
+            <p class="credits">
+                Designed by GLL
+            </p>
+        </footer>
+    </body>
+</html> 
