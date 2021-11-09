@@ -273,10 +273,26 @@ body {
   text-align: center;
 }
 
+
+.section--white {
+  -webkit-transform: skew(0deg, -160deg);
+  transform: skew(0deg, -160deg);
+  padding: 200px 0;
+  margin-top: 30px;
+}
+
+.section--white .div-section-white {
+  -webkit-transform: skew(0deg, -200deg);
+  transform: skew(0deg, -200deg);
+  text-align: center;
+}
+
 .services-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 .logo-social-media img{
@@ -286,19 +302,79 @@ body {
 }
 
 .card {
-  /* border: 1px solid red; */
-  background-color: #fff;
+  max-width: 90%;
   box-shadow: 0px 3px 6px #00000029;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
+  padding-bottom: 16px;
+}
+
+.logo-medal img{
+  width: 96px;
+  position: relative;
+  top: -50px;
+  border-radius: 100px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.medal-bronze {
+  border: 5px solid #deb887;
+  background-color: #deb887;
+}
+
+.medal-silver {
+  border: 5px solid silver;
+  background-color: silver;
+}
+
+.medal-gold {
+  border: 5px solid gold;
+  background-color: gold;
+}
+
+.card-bronze {
+  border: 5px solid burlywood;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+.card-bronze:hover {
+  transform: scale(105%);
+}
+
+.card-silver {
+  border: 5px solid silver;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+.card-silver:hover {
+  transform: scale(105%);
+}
+
+.card-gold {
+  border: 5px solid gold;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+.card-gold:hover {
+  transform: scale(105%);
 }
 
 .card h1 {
-  margin: 16px 0;
+  margin: 0 0 16px ;
+  color: #000;
 }
 
-.card p {
+.card-description p {
   font-size: 1.25rem;
+  margin: 5px 0;
+}
+
+.check-icon img{
+  height: 12px;
+  margin-right: 5px;
 }
 
 .sale {
@@ -635,4 +711,13 @@ textarea {
   textarea {
     font-size: 0.875em;
   }
+}
+
+.card-footer {
+  position: relative;
+}
+
+.text-sobre-nos {
+  text-align: center;
+  justify-content: center;
 }
