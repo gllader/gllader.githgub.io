@@ -317,7 +317,7 @@ body {
   font-family: "Roboto";
 }
 
-.clients h3 {
+/* .clients h3 {
   margin: 8px 0;
 }
 
@@ -337,6 +337,57 @@ body {
 
 .clients-card i img {
   width: 150px;
+} */
+
+.slider {
+  display: block;
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.slider label {
+  background-color: #000;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }
 
 .text-sobre-nos {
