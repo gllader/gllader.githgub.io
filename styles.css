@@ -3,6 +3,11 @@
 
 :root {
   --option-height: 80px;
+  --b-r-t: 5px;
+	--main-color: #ff0000;
+	--main-border-color: #ff7a00;
+	--sec-color: #ffffff;
+	--color: white;
 }
 
 * {
@@ -834,17 +839,6 @@ textarea {
   textarea {
     font-size: 0.875em;
   }
-}
-
-
-@import 'https://cdn.linearicons.com/free/1.0.0/icon-font.min.css';
-
-:root {
-	--b-r-t: 5px;
-	--main-color: #ff0000;
-	--main-border-color: #ff7a00;
-	--sec-color: #ffffff;
-	--color: white;
 }
 
 .timeline {
