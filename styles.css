@@ -326,11 +326,16 @@ body {
   border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   height: 350px;
+  transition: 0.2s;
+}
+
+.clients-card:hover {
+  transform: scale(100.5%);
 }
 
 .clients-card i img {
-  margin-top: 35px;
   width: 150px;
 }
 
@@ -340,7 +345,8 @@ body {
 }
 
 .about-footer {
-  margin: 16px 0;
+  font-size: 1.25rem;
+  margin: 24px 0;
   grid-column: 1 / 3;
 }
 
