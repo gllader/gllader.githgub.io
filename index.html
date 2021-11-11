@@ -31,6 +31,16 @@
                 navbar.classList.toggle("showMe");
                 menuIconWrapper.classList.toggle("active");
             }
+
+        }
+        function sendMail() {
+            var link = "mailto:me@example.com"
+                    + "?cc=myCCaddress@example.com"
+                    + "&subject=" + encodeURIComponent(document.getElementById('subject_input').value)
+                    + "&body=" + encodeURIComponent(document.getElementById('message_input').value)
+            ;
+            
+            window.location.href = link;
         }
     </script>
 </head>
@@ -150,7 +160,7 @@
                     <div class="timeline--item--title">
                         <span class="lnr lnr-heart-pulse"><img src="./assets/presentation.png" alt=""></span>
                     </div>
-                    <div class="timeline--item--container">
+                    <div class="timeline--item--container" style="text-align: right;">
                         <h3>Planejamento</h3>
                         <p>
                             Após ter todos as ideias, começamos a
@@ -176,7 +186,7 @@
                     <div class="timeline--item--title">
                         <span class="lnr lnr-clock"><img src="./assets/startup.png" alt=""></span>
                     </div>
-                    <div class="timeline--item--container">
+                    <div class="timeline--item--container" style="text-align: right;">
                         <h3>Lançamento</h3>
                         <p>
                             Modelo aprovadom, botamos
@@ -187,7 +197,7 @@
             </div>
         </div>
         <div class="clients">
-            <h3>Alguns de nossos clientes</h3>
+            <h3>Em parceria com</h3>
             <div class="clients-card">
                 <div>
                     <i><img src="./assets/emporio.png" alt="emporio"></i>
@@ -205,6 +215,11 @@
     <section class="section" id="section3">
         <div class="section section--white">
             <div class="div-section-white">
+                <div class="service-cards-title">
+                    <hr class="service-cards-title-hr"/>
+                    <h2>GESTÃO DE MARKETING DIGITAL</h2>
+                    <hr class="service-cards-title-hr"/>
+                </div>
                 <div class="services-cards">
                     <div class="card card-bronze">
                         <i class="logo-medal"><img class="medal-bronze" src="./assets/medal.png" alt="medal"></i>
@@ -298,6 +313,94 @@
                         </div>
                     </div>
                 </div>
+                <br/>
+                <br/>
+                <div class="service-cards-title">
+                    <hr class="service-cards-title-hr"/>
+                    <h2>TERCEIRIZAÇÃO DE E-COMMERCE</h2>
+                    <hr class="service-cards-title-hr"/>
+                </div>
+                <div class="services-cards">
+                    <div class="card card-bronze">
+                        <i class="logo-medal"><img class="medal-bronze" src="./assets/medal.png" alt="medal"></i>
+                        <h1>BRONZE</h1>
+                        <!-- <div class="logo-social-media">
+                            <i><img src="./assets/facebook.png" alt="facebook logo"></i>
+                            <i><img src="./assets/instagram.png" alt="instagram logo"></i>
+                        </div> -->
+                        <div class="card-description">
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração Tray</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração Mercado Live</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração Magalu</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração B2W</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Direito a 15 itens</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> 4 anúncios de cada item</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Criação de títulos </p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Criação de descrição</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Manutenção de anúncios</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Relatório semanal</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Fotografia de produto</p>
+                        </div>
+                        <div class="card-footer">
+                            <hr>
+                            <p class="sale">R$1590,00 à R$1990,00 *</p>
+                        </div>
+                    </div>
+                    <div class="card card-silver">
+                        <i class="logo-medal"><img class="medal-silver" src="./assets/medal.png" alt="medal"></i>
+                        <h1>PRATA</h1>
+                        <!-- <div class="logo-social-media">
+                            <i><img src="./assets/facebook.png" alt="facebook logo"></i>
+                            <i><img src="./assets/instagram.png" alt="instagram logo"></i>
+                            <i><img src="./assets/google.png" alt="google logo"></i>
+                        </div> -->
+                        <div class="card-description">
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração Tray</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração Mercado Live</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração Magalu</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração B2W</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Direito a 25 itens</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> 4 anúncios de cada item</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Criação de títulos </p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Criação de descrição</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Manutenção de anúncios</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Relatório semanal</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Fotografia de produto</p>
+                        </div>
+                        <div class="card-footer">
+                            <hr>
+                            <p class="sale">R$2690,00 à R$2990,00 *</p>
+                        </div>
+                    </div>
+                    <div class="card card-gold">
+                        <i class="logo-medal"><img class="medal-gold" src="./assets/medal.png" alt="medal"></i>
+                        <h1>OURO</h1>
+                        <!-- <div class="logo-social-media">
+                            <i><img src="./assets/facebook.png" alt="facebook logo"></i>
+                            <i><img src="./assets/instagram.png" alt="instagram logo"></i>
+                            <i><img src="./assets/google.png" alt="google logo"></i>
+                            <i><img src="./assets/youtube.png" alt="youtube logo"></i>
+                        </div> -->
+                        <div class="card-description">
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração Tray</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração Mercado Live</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração Magalu</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Integração B2W</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Direito a 15 itens</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> 4 anúncios de cada item</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Criação de títulos </p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Criação de descrição</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Manutenção de anúncios</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Relatório semanal</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> Fotografia de produto</p>
+                            <p><i class="check-icon"><img src="./assets/check.png" alt="check"></i> 2 CNPJs</p>
+                        </div>
+                        <div class="card-footer">
+                            <hr >
+                            <p class="sale">R$4590,00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -308,7 +411,7 @@
             <h1>&bull; Fale conosco &bull;</h1>
             <div class="underline">
             </div>
-            <form action="#" method="post" id="contact_form">
+            <form action="javascript:sendMail();"  method="post" id="contact_form">
                 <div class="name">
                     <label for="name"></label>
                     <input type="text" placeholder="Meu nome é" name="name" id="name_input" required>
@@ -333,6 +436,10 @@
                     <label for="message"></label>
                     <textarea name="message" placeholder="Eu gostaria de falar sobre" id="message_input" cols="30"
                         rows="5" required></textarea>
+                </div>
+                <div class="conta">
+                    <label for="conta"></label>
+                    <input type="text" placeholder="2 + 2 =" name="conta" id="name_input" required>
                 </div>
                 <div class="submit">
                     <input type="submit" value="Enviar mensagem" id="form_button" />

@@ -205,7 +205,7 @@ body {
 }
 
 .section--yellow {
-  background: black;
+  background: rgba(0, 0, 0, 0.548);
   -webkit-transform: skew(0deg, -200deg);
   transform: skew(0deg, -200deg);
   padding: 200px 0;
@@ -241,6 +241,7 @@ body {
   z-index: 99;
   margin-top: 200px;
   font-family: 'Rubik', sans-serif;
+  text-shadow: 0px 0px 5px rgb(75, 75, 75);
 }
 
 /* The typing effect */
@@ -301,15 +302,11 @@ body {
 }
 
 .section--white {
-  -webkit-transform: skew(0deg, -160deg);
-  transform: skew(0deg, -160deg);
   padding: 200px 0;
   margin-top: 30px;
 }
 
 .section--white .div-section-white {
-  -webkit-transform: skew(0deg, -200deg);
-  transform: skew(0deg, -200deg);
   text-align: center;
 }
 
@@ -319,6 +316,10 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
   margin-top: -15px;
+  background-color: #ffffff;
+  position: relative;
+  /* box-shadow: 0 0 1em rgb(0, 0, 0); */
+  z-index: 99;
 }
 
 .about-description {
@@ -663,6 +664,16 @@ h1 {
   width: 45%;
 }
 
+.conta {
+  float: left;
+  width: 15%;
+}
+
+.submit {
+  float: right;
+  width: 30%;
+}
+
 input[type="text"],
 [type="email"],
 select,
@@ -945,4 +956,18 @@ textarea {
 
 @media (max-width: 667px) {
   
+}
+
+.service-cards-title {
+  margin-bottom: 100px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+.service-cards-title-hr {
+  background-color: #EDCE8C;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.1),
+  5px 5px 5px rgba(255, 255, 255, 0.08);
 }
