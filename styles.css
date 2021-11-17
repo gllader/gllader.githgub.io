@@ -1006,11 +1006,6 @@ textarea {
   border-radius: 50%;
 }
 
-
-@media (max-width: 667px) {
-  
-}
-
 .service-cards-title {
   margin-bottom: 100px;
   font-weight: bold;
@@ -1023,4 +1018,39 @@ textarea {
   background-color: #EDCE8C;
   box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.1),
   5px 5px 5px rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 360px) {
+  .navBarWrapper {
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .typewriter {
+    width: 100%;
+  }
+
+  .typewriter img{
+    display: none;
+  }
+
+  .img-center {
+    display: none;
+  }
+
+  .services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .submit {
+    float: none;
+  }
+
 }
