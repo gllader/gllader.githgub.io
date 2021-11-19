@@ -1028,16 +1028,9 @@ textarea {
 }
 
 @media (max-width: 360px) {
-  .partners {
-    display: none;
-  }
-
+  
   .typewriter {
     width: 100%;
-  }
-
-  .typewriter img{
-    display: none;
   }
 
   .img-center {
@@ -1124,7 +1117,7 @@ textarea {
   }
 
   .section--black::before {
-    height: 60%;
+    height: 70%;
     top: 0;
   }
 } 
