@@ -1051,8 +1051,13 @@ textarea {
   }
 
   .section--black::before {
-    height: 70%;
+    height: 80%;
     top: 0;
+  }
+
+  .typewriter h1 {
+    font-size: 20px;
+    max-width: 93%;
   }
 
 }
