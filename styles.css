@@ -1041,7 +1041,10 @@ textarea {
   }
 
   .img-center {
-    display: none;
+  width: 30%;
+  margin-top: 175px;
+  z-index: 99;
+  position: relative;
   }
 
   .services-cards {
@@ -1052,6 +1055,11 @@ textarea {
 
   .submit {
     float: none;
+  }
+
+  .section--black::before {
+    height: 70%;
+    top: 0;
   }
 
 }
@@ -1112,7 +1120,7 @@ textarea {
 
   .typewriter h1 {
     font-size: 20px;
-    max-width: 92%;
+    max-width: 93%;
   }
 
   .section--black::before {
